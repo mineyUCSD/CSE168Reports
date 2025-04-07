@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lab Report 2 | CSE15L Lab Reports</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Lab Report 2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Lab Reports for CSE15L Spring Quarter 2023" />
+<meta property="og:description" content="Lab Reports for CSE15L Spring Quarter 2023" />
+<link rel="canonical" href="http://localhost:4000/cse15l-lab-reports/LabReport2.html" />
+<meta property="og:url" content="http://localhost:4000/cse15l-lab-reports/LabReport2.html" />
+<meta property="og:site_name" content="CSE15L Lab Reports" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lab Report 2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Lab Reports for CSE15L Spring Quarter 2023","headline":"Lab Report 2","url":"http://localhost:4000/cse15l-lab-reports/LabReport2.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/cse15l-lab-reports/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/cse15l-lab-reports/feed.xml" title="CSE15L Lab Reports" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/cse15l-lab-reports/">CSE15L Lab Reports</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/cse15l-lab-reports/about/">About</a><a class="page-link" href="/cse15l-lab-reports/LabReport1.html">Lab Report 1</a><a class="page-link" href="/cse15l-lab-reports/LabReport2.html">Lab Report 2</a><a class="page-link" href="/cse15l-lab-reports/LabReport3.html">Lab Report 3</a><a class="page-link" href="/cse15l-lab-reports/LabReport4.html">Lab Report 4</a><a class="page-link" href="/cse15l-lab-reports/LabReport5.html">Lab Report 5</a><a class="page-link" href="/cse15l-lab-reports/">cse15l-lab-reports</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Lab Report 2</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="lab-report-2">Lab Report 2</h1>
+
+<h2 id="part-1">Part 1</h2>
+<hr />
+
+<h3 id="stringserverjava">StringServer.java</h3>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233507029-e784b138-38e7-48ab-a03a-5a45acb2cc78.png" alt="image" /></p>
+
+<hr />
+
+<h3 id="serverjava">Server.java</h3>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233508271-09223dce-4def-4aa5-8407-ed341a55cb65.png" alt="image" /></p>
+
+<hr />
+
+<h3 id="-which-methods-in-your-code-are-called">* Which methods in your code are called?</h3>
+
+<p><em>I wrote the code in <code class="language-plaintext highlighter-rouge">StringServer.java</code>, so I will refer to the code in that file.</em></p>
+
+<p><strong>Two methods in the file are called:</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">public String handleRequest(URI url)</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">public static void main(String[] args)</code></p>
+
+<hr />
+
+<h3 id="-what-are-the-relevant-arguments-to-those-methods-and-the-values-of-any-relevant-fields-of-the-class">* What are the relevant arguments to those methods, and the values of any relevant fields of the class?</h3>
+
+<p>The method <code class="language-plaintext highlighter-rouge">public String handleRequest(URI url)</code> takes in a URL from the search bar and uses the infromation in the search bar for functionalities in the program</p>
+
+<p>There is also a field in the Handler class called <code class="language-plaintext highlighter-rouge">String storageString</code> that is initialized emptily, but will contain future inputed strings</p>
+
+<p>Another variable in the Handler class is <code class="language-plaintext highlighter-rouge">String[] parameters</code> that splits the query up into the type of query, index 0, and the value, index 1.</p>
+
+<p>In the StringServer main method,  it takes in a <code class="language-plaintext highlighter-rouge">String[]</code> arguments from the command line, called args. To start the server, I type <code class="language-plaintext highlighter-rouge">java StringServer</code> + whatever port is available, and that port number is the first element in args.</p>
+
+<p>There are also some methods that are called in handleRequest that seemssomewhat pertinent,  <code class="language-plaintext highlighter-rouge">getQuery()</code> and <code class="language-plaintext highlighter-rouge">getPath()</code>. I think that URIs have these methods in java, and they do quite a bit of the work in this program. <code class="language-plaintext highlighter-rouge">getPath()</code> gets the path part of the URI and converts it to a <code class="language-plaintext highlighter-rouge">String</code> so that it can be utilized in the program, like seeing if the path is empty, or contains some command.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">getQuery()</code> method looks in the URI for a <code class="language-plaintext highlighter-rouge">?</code> and then any text after that it returned as a <code class="language-plaintext highlighter-rouge">String</code>, sort’ve like <code class="language-plaintext highlighter-rouge">getPath()</code>. This is useful because then you can use a query to even further specify a command, in this case asking to store and print a <code class="language-plaintext highlighter-rouge">String </code>.</p>
+
+<hr />
+
+<h3 id="-how-do-the-values-of-any-relevant-fields-of-the-class-change-from-this-specific-request-if-no-values-got-changed-explain-why">* How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.</h3>
+
+<p>If <code class="language-plaintext highlighter-rouge">/add-message?s=&lt;string&gt;</code> is added at the end of the url in searchbar, with <code class="language-plaintext highlighter-rouge">&lt;string&gt;</code> being any inputted string, then the <code class="language-plaintext highlighter-rouge">storageString</code> field is concatenated with the inputed <code class="language-plaintext highlighter-rouge">&lt;string&gt;</code> and a new line <code class="language-plaintext highlighter-rouge">\n</code>.</p>
+
+<p>The program knows to obtain the String because of the query <code class="language-plaintext highlighter-rouge">?s=&lt;string&gt;</code>. <code class="language-plaintext highlighter-rouge">s</code> is the type of query(the only functional one in this program) and <code class="language-plaintext highlighter-rouge">&lt;string&gt;</code> is the value for this query. Each is stored, respectively, in <code class="language-plaintext highlighter-rouge">String[] paramaters</code> as an element in index 0 and index 1.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">storageString</code> is then returned in the handleRequest Method, which causes the <code class="language-plaintext highlighter-rouge">storageString</code> to be printed onto the webpage.</p>
+
+<p>Every time the page is refreshed, a new URI is passed into the program, so that update is what allows multiple responsive inputs into the program, and therefore multiple words printed.</p>
+
+<hr />
+
+<h3 id="two-screenshots-of-add-messagesstring">Two Screenshots of <code class="language-plaintext highlighter-rouge">/add-message?s=&lt;string&gt;</code></h3>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233535194-9fee4589-3c1d-403b-ba04-cd4a5b362333.png" alt="image" /></p>
+
+<ul>
+  <li>Which methods in your code are called?</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">public String handleRequest(URI url)</code> is called in the <code class="language-plaintext highlighter-rouge">Server.java</code> file. I think that the file uses this method to see what should be done with the url that is entered into the search bar. In this case, the url entered is <code class="language-plaintext highlighter-rouge">http://localhost:3333/add-message?s=Communist</code>. Once the program gets the url input, it looks at the portions of the url using <code class="language-plaintext highlighter-rouge">.getPath()</code> and <code class="language-plaintext highlighter-rouge">.getQuery()</code>. Based on these methods, the program returns some <code class="language-plaintext highlighter-rouge">String</code>.</p>
+
+<ul>
+  <li>What are the relevant arguments to those methods, and the values of any relevant fields of the class?</li>
+</ul>
+
+<p>handleRequest() takes a url, and that is obtained from the search bar of the page that is opened by the server.</p>
+
+<p><code class="language-plaintext highlighter-rouge">.getPath()</code> and <code class="language-plaintext highlighter-rouge">.getQuery()</code> are methods that can be used to get information from URIs, described a bit more in the preliminary accidental, missreading instructions, section.</p>
+
+<p>The field in the class <code class="language-plaintext highlighter-rouge">StringServer.java</code> is <code class="language-plaintext highlighter-rouge">private String storageString</code> which is initialized emptyily. After the methods are called, and assuming there is some qeury and path of the form <code class="language-plaintext highlighter-rouge">http://localhost:3333/add-message?s=&lt;string&gt;</code>, then <code class="language-plaintext highlighter-rouge">&lt;string&gt;</code> is concatentated to <code class="language-plaintext highlighter-rouge">storageString</code> and <code class="language-plaintext highlighter-rouge">storageString</code> is returned.</p>
+
+<ul>
+  <li>How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.</li>
+</ul>
+
+<p>In this iteration, since it is the first time a String Query is added to the url, the <code class="language-plaintext highlighter-rouge">&lt;string&gt;</code> is added to <code class="language-plaintext highlighter-rouge">storageString</code> and is then returned. <code class="language-plaintext highlighter-rouge">storageString</code> goes from being empty to having the value <code class="language-plaintext highlighter-rouge">"Communist\n"</code>. <code class="language-plaintext highlighter-rouge">storageString</code> is remembered when new urls are entered into the server, as is demonstrated by the next screenshot.</p>
+
+<hr />
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233535404-fdbbfa60-ef10-4051-9258-df7cbffea6b2.png" alt="image" /></p>
+
+<ul>
+  <li>Which methods in your code are called?</li>
+</ul>
+
+<p>Same methods.</p>
+
+<p><code class="language-plaintext highlighter-rouge">public String handleRequest(URI url)</code>
+<code class="language-plaintext highlighter-rouge">getPath()</code>
+<code class="language-plaintext highlighter-rouge">getQuery()</code>
+<code class="language-plaintext highlighter-rouge">split()</code>
+<code class="language-plaintext highlighter-rouge">equals()</code></p>
+
+<ul>
+  <li>What are the relevant arguments to those methods, and the values of any relevant fields of the class?</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">public String handleRequest(URI url)</code> takes a url from the searchbar. The method uses that url and the other methods above to look at the URL and decide what <code class="language-plaintext highlighter-rouge">String</code> to return</p>
+
+<p><code class="language-plaintext highlighter-rouge">url.getPath()</code> is used on the url <code class="language-plaintext highlighter-rouge">http://localhost:3333/add-message?s=Daughter</code> to get the path, so it returns <code class="language-plaintext highlighter-rouge">/add-message</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">url.getQuery()</code> returns the query, everything after the ?, <code class="language-plaintext highlighter-rouge">s=Daughter</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">split</code> is used on the query, and sticks everything separated by <code class="language-plaintext highlighter-rouge">=</code> into an array called <code class="language-plaintext highlighter-rouge">parameters</code>. it looks like <code class="language-plaintext highlighter-rouge">{"s","Daughter"}</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">equals</code> is used to see if the query or patch matches what is expected for a <code class="language-plaintext highlighter-rouge">String</code> to be stored in `storageString’</p>
+
+<ul>
+  <li>How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.</li>
+</ul>
+
+<p>After all of the methods are called, the program runs, given the new url inputted, <code class="language-plaintext highlighter-rouge">Daughter/n</code> is added to <code class="language-plaintext highlighter-rouge">stringStorage</code>. What is cool about this is that <code class="language-plaintext highlighter-rouge">stringStorage</code> still has the value <code class="language-plaintext highlighter-rouge">Communist/n</code> that was added from the last query inputed via url. So now, <code class="language-plaintext highlighter-rouge">stringStorage</code> has the the value <code class="language-plaintext highlighter-rouge">"Communist/nDaughter/n"</code> pretty neat. I wonder where this data is stored???</p>
+
+<hr />
+
+<h3 id="demo">Demo</h3>
+
+<p>the command <code class="language-plaintext highlighter-rouge">java StringServer 3333</code> is entered to start the server. 3333 is the port number and StringServer is the name of the class that contains the main method for the server.</p>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233507778-725bb3b3-39dd-4005-afd5-cce0079bdd31.png" alt="image" /></p>
+
+<p>I then went to the localhost and edited the url to read <code class="language-plaintext highlighter-rouge">localhost:3333/add-message?s=Hello</code> the path is <code class="language-plaintext highlighter-rouge">localhost:3333/add-message</code> and the query is <code class="language-plaintext highlighter-rouge">?s=Hello</code>
+Since the query tells the program to return the <code class="language-plaintext highlighter-rouge">String</code> Hello, it does so by adding it to the <code class="language-plaintext highlighter-rouge">storageString</code> and then returning the extended <code class="language-plaintext highlighter-rouge">storageString</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233507360-05852274-507a-41f7-b211-7bc04c9990d6.png" alt="image" /></p>
+
+<p>Next, I did the same thing, but changed the query to <code class="language-plaintext highlighter-rouge">?s=World</code> and this updates the URI query so that the program wants to add <code class="language-plaintext highlighter-rouge">World</code> to the <code class="language-plaintext highlighter-rouge">storageString</code> and then return it. As you can see, it then prints <code class="language-plaintext highlighter-rouge">Hello\nWorld\n</code> because that is how the Strings are added to <code class="language-plaintext highlighter-rouge">storageString</code>.</p>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233507427-8be85b16-57a9-4e49-bfb6-fa367ede51ff.png" alt="image" /></p>
+
+<p>I added a more introspective query here that utilizes aliteration. It is also much longer. I want to test if adding <code class="language-plaintext highlighter-rouge">/n</code> into the query String can make a new line???</p>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233507641-e7040856-e29f-478a-b9e6-0a16235fb32c.png" alt="image" /></p>
+
+<p>No. Says bad syntax 😦</p>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233514565-7e6a0738-0988-4882-b7e7-10316d25ef63.png" alt="image" /></p>
+
+<hr />
+
+<h2 id="part-2">Part 2</h2>
+
+<h3 id="arrayexamplesjava">ArrayExamples.java</h3>
+
+<p>I choose ArrayExamples.java as my buggy program.</p>
+
+<p>Here is a failure-inducing input for the <code class="language-plaintext highlighter-rouge">ReverseInPlace()</code> method written as a JUnit test</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+	    int[] input1 = {1,2};
+	    ArrayExamples.reverseInPlace(input1);
+	    assertArrayEquals(new int[]{2,1}, input1);
+	}
+}
+</code></pre></div></div>
+
+<p>Here is a nonfailure-inducing input for the <code class="language-plaintext highlighter-rouge">ReverseInPlace()</code> method written as a JUnit test</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+		int[] input1 = {3};
+		ArrayExamples.reverseInPlace(input1);
+		assertArrayEquals(new int[]{3}, input1);
+	}
+}
+
+
+</code></pre></div></div>
+
+<hr />
+
+<p>Symptoms:</p>
+
+<p><img src="https://user-images.githubusercontent.com/130080241/233518811-653410d1-a35a-4a4e-826d-6697d7ff95da.png" alt="image" /></p>
+
+<p>The failure inducing input test fails, huh. The array {1,2} when reversed by the method gives the array {2,2} instead of {2,1}. This could be for a factor of reasons without looking at the code.</p>
+
+<hr />
+
+<p><strong>Before Code/ Bug riddled code:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+
+    for(int i = 0; i &lt; arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+    
+  }
+  
+</code></pre></div></div>
+
+<p><strong>Fixed(probably) code:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    int[] dummy = new int[arr.length];
+
+    for(int i = 0; i &lt; dummy.length; i++){
+      dummy[i] = arr[i];
+    }
+
+    for(int i = 0; i &lt; arr.length; i += 1) {
+      arr[i] = dummy[arr.length - i - 1];
+    }
+  }
+</code></pre></div></div>
+
+<p>Looking at the infested code, it appears that the error occurs because the arr is being reversed while also serving as the input for the reversing. So if it has {a,b}, it makes the first index the last index in the array, so {b,b}, but then on another iteration of the loop it uses that modified loop as the input for the reversal. Instead of seeing that the first index element is a, it looks at the partially modified array and sees that the element is b, so the reversed array according to this program is {b,b}, or {2,2}.</p>
+
+<p>Therefore, my solution to this bug was creating a duplicate array, <code class="language-plaintext highlighter-rouge">dummy</code> that has the contents of <code class="language-plaintext highlighter-rouge">arr</code> so that I can reverse arr and then compare it to the unreversed version dummy instead of the partially reversed <code class="language-plaintext highlighter-rouge">arr</code>. I think it works, swimmingly like a sea urchin??? Or for my tests it does.</p>
+
+<h2 id="part-3">Part 3</h2>
+
+<p>I learned a lot and like learning a lot in these weeks 2 and 3 so much! I learned about <code class="language-plaintext highlighter-rouge">git</code>, some server stuff, JUnit, debugging and bug terminologies, yeah. The only thing that isn’t new is basic java syntax. With <code class="language-plaintext highlighter-rouge">git,</code> I learned how to clone repositories and fork them so I can work on people’s code or share my own code. I learned about JUnit so I can easily make some tests for my java programs. I learned how to make a local host Java webserver thingy that can do some behavior based on the URl. I learned about urls and URIs. So, quite a bit of handy stuff was learned.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/cse15l-lab-reports/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">CSE15L Lab Reports</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">CSE15L Lab Reports</li><li><a class="u-email" href="mailto:miney@ucsd.edu">miney@ucsd.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mineyUCSD"><svg class="svg-icon"><use xlink:href="/cse15l-lab-reports/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mineyUCSD</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Lab Reports for CSE15L Spring Quarter 2023</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

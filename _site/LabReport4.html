@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lab Report 4 | CSE15L Lab Reports</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Lab Report 4" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Lab Reports for CSE15L Spring Quarter 2023" />
+<meta property="og:description" content="Lab Reports for CSE15L Spring Quarter 2023" />
+<link rel="canonical" href="http://localhost:4000/cse15l-lab-reports/LabReport4.html" />
+<meta property="og:url" content="http://localhost:4000/cse15l-lab-reports/LabReport4.html" />
+<meta property="og:site_name" content="CSE15L Lab Reports" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lab Report 4" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Lab Reports for CSE15L Spring Quarter 2023","headline":"Lab Report 4","url":"http://localhost:4000/cse15l-lab-reports/LabReport4.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/cse15l-lab-reports/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/cse15l-lab-reports/feed.xml" title="CSE15L Lab Reports" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/cse15l-lab-reports/">CSE15L Lab Reports</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/cse15l-lab-reports/about/">About</a><a class="page-link" href="/cse15l-lab-reports/LabReport1.html">Lab Report 1</a><a class="page-link" href="/cse15l-lab-reports/LabReport2.html">Lab Report 2</a><a class="page-link" href="/cse15l-lab-reports/LabReport3.html">Lab Report 3</a><a class="page-link" href="/cse15l-lab-reports/LabReport4.html">Lab Report 4</a><a class="page-link" href="/cse15l-lab-reports/LabReport5.html">Lab Report 5</a><a class="page-link" href="/cse15l-lab-reports/">cse15l-lab-reports</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Lab Report 4</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="lab-report-4">Lab Report 4</h1>
+
+<p>So, this week I will run through the lab task where I fix a bug in a file on a remote computer using the terminal!</p>
+
+<h2 id="step-4">Step 4</h2>
+
+<p><img src="images/Screenshot%202023-05-19%20091855.png" alt="Screenshot" /></p>
+
+<p><strong>Keystrokes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh&lt;space&gt;cs15lsp23et&lt;shift&gt;2ieng6.ucsd.edu&lt;enter&gt;
+</code></pre></div></div>
+<p>This is me signing in to <code class="language-plaintext highlighter-rouge">ieng6</code>. After hooking up the ssh key, I no longer have to type in password, so there is no need to type those keystrokes!</p>
+
+<p>I sortve wanna figure out how to make a keylogger, but also no. More typing for me… I apologize if there are inaccuracies.</p>
+
+<h2 id="step-5">Step 5</h2>
+
+<p><strong>Lab7 Fork SSH link</strong>
+<img src="images/LabReport4Images/Screenshot%202023-05-19%20110518.png" alt="screenshotGithubCloneLink" /></p>
+
+<p><strong>Terminal</strong>
+<img src="images/LabReport4Images/Screenshot%202023-05-19%20094812.png" alt="screenshotGitCloneTerminal" /></p>
+
+<p><strong>Keystrokes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone &lt;paste&gt; enter
+</code></pre></div></div>
+
+<p>I cloned the <code class="language-plaintext highlighter-rouge">lab7</code> repository to my <code class="language-plaintext highlighter-rouge">ieng6</code> account directory. Using the <code class="language-plaintext highlighter-rouge">ssh</code> link instead of the <code class="language-plaintext highlighter-rouge">https</code> link lets me push to the main branch on github. I pasted from my clipboard using <code class="language-plaintext highlighter-rouge">right-click</code> and then selecting <code class="language-plaintext highlighter-rouge">paste</code> because my keyboard doesn’t have an <code class="language-plaintext highlighter-rouge">insert</code> key and, for some reason, in my terminal paste is <code class="language-plaintext highlighter-rouge">ctrl+insert</code>.</p>
+
+<h2 id="step-6">Step 6</h2>
+
+<p><strong>Locating Test Script</strong>
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_locatingtestscript.png" alt="locatingtestScript" /></p>
+
+<p><strong>JUnit Output</strong>
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_testScriptOutput.png" alt="testScriptOut" /></p>
+
+<p><strong>Keystrokes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls&lt;enter&gt;cd&lt;space&gt;l&lt;tab&gt;&lt;enter&gt;ls&lt;enter&gt;bash&lt;space&gt;test.sh&lt;enter&gt;
+</code></pre></div></div>
+
+<p>I navigated to <code class="language-plaintext highlighter-rouge">./lab7</code> and from there used the <code class="language-plaintext highlighter-rouge">bash</code> script <code class="language-plaintext highlighter-rouge">test.sh</code> which compiled everything and ran the <code class="language-plaintext highlighter-rouge">JUnit</code> tests. I hope you appreciate the tabs I used for super efficiency. Oh!! And one of the two tests ran is a <code class="language-plaintext highlighter-rouge">FAILURE!!!</code>!!!! I better fix that………</p>
+
+<h2 id="step-7">Step 7</h2>
+
+<p><strong>ListExamplesTests.java</strong></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.*;</span>
+<span class="kn">import</span> <span class="nn">org.junit.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ListExamplesTests</span> <span class="o">{</span>
+        <span class="nd">@Test</span><span class="o">(</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">500</span><span class="o">)</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testMerge1</span><span class="o">()</span> <span class="o">{</span>
+                <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">l1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"x"</span><span class="o">,</span> <span class="s">"y"</span><span class="o">));</span>
+                <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">l2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span> <span class="s">"b"</span><span class="o">));</span>
+                <span class="n">assertArrayEquals</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">[]{</span> <span class="s">"a"</span><span class="o">,</span> <span class="s">"b"</span><span class="o">,</span> <span class="s">"x"</span><span class="o">,</span> <span class="s">"y"</span><span class="o">},</span> <span class="nc">ListExamples</span><span class="o">.</span><span class="na">merge</span><span class="o">(</span><span class="n">l1</span><span class="o">,</span> <span class="n">l2</span><span class="o">).</span><span class="na">toArray</span><span class="o">());</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Test</span><span class="o">(</span><span class="n">timeout</span> <span class="o">=</span> <span class="mi">500</span><span class="o">)</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testMerge2</span><span class="o">()</span> <span class="o">{</span>
+                <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">l1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span> <span class="s">"b"</span><span class="o">,</span> <span class="s">"c"</span><span class="o">));</span>
+                <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">l2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;(</span><span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"c"</span><span class="o">,</span> <span class="s">"d"</span><span class="o">,</span> <span class="s">"e"</span><span class="o">));</span>
+                <span class="n">assertArrayEquals</span><span class="o">(</span><span class="k">new</span> <span class="nc">String</span><span class="o">[]{</span> <span class="s">"a"</span><span class="o">,</span> <span class="s">"b"</span><span class="o">,</span> <span class="s">"c"</span><span class="o">,</span> <span class="s">"c"</span><span class="o">,</span> <span class="s">"d"</span><span class="o">,</span> <span class="s">"e"</span> <span class="o">},</span> <span class="nc">ListExamples</span><span class="o">.</span><span class="na">merge</span><span class="o">(</span><span class="n">l1</span><span class="o">,</span> <span class="n">l2</span><span class="o">).</span><span class="na">toArray</span><span class="o">());</span>
+        <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>So, It appears that the error occurs in <code class="language-plaintext highlighter-rouge">testMerge2</code>. There must be an error with the merge function that permits the first test to pass but not the second one???? What is it!!!!!???</p>
+
+<p><strong>Opening <code class="language-plaintext highlighter-rouge">ListExamples.java</code> in <code class="language-plaintext highlighter-rouge">vim</code></strong> 
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_typingVimCommand.png" alt="screenshot" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">vim</code> editor containing bugged out <code class="language-plaintext highlighter-rouge">ListExamples.java</code></strong>
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_bugFilledVimListExamples.png" alt="screenshot" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">vim</code> editor after fixing the bug</strong>
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_fixedListExamples.png" alt="screenshot" /></p>
+
+<p><strong>Keystrokes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim&lt;space&gt;&lt;shift&gt;list&lt;shift&gt;examples.java&lt;enter&gt;r2:wq&lt;enter&gt;
+</code></pre></div></div>
+
+<p>I opened up the bugged <code class="language-plaintext highlighter-rouge">ListExamples.java</code> with <code class="language-plaintext highlighter-rouge">vim</code>. Luckily, when I opened the file, my cursor was already on top of the <code class="language-plaintext highlighter-rouge">1</code> that causes the bug!!!! The darn incorrect index variable is breaking the test! So I just <code class="language-plaintext highlighter-rouge">r</code> to replace and <code class="language-plaintext highlighter-rouge">2</code> to fix the bug. Then <code class="language-plaintext highlighter-rouge">:wq</code> to save and quit. All better!</p>
+
+<h2 id="step-8">Step 8</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">test.sh</code> Command</strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_testScriptCommand.png" alt="screenshot" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">JUnit</code> Output</strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_JUnitOutput2.png" alt="screenshot" /></p>
+
+<p><strong>Keystrokes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash&lt;space&gt;test.sh&lt;enter&gt;
+</code></pre></div></div>
+<p>Straightforward for this step. I ran the bash script and the two tests got <code class="language-plaintext highlighter-rouge">Ok</code>. I fixed her up! Like new polished nails!</p>
+
+<h2 id="step-9">Step 9</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git status</code> Command</strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_gitStatus.png" alt="screenshot" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git add</code> Command</strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_gitAdd.png" alt="screenshot" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git commit</code> Command</strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_gitCommit.png" alt="screenshot" /></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git push</code> Command</strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_gitPush.png" alt="screenshot" /></p>
+
+<p><strong>Github Repository after <code class="language-plaintext highlighter-rouge">push</code></strong><br />
+<img src="/cse15l-lab-reports/images/LabReport4Images/screenshot_githubRepositoryPushed.png" alt="screenshot" /></p>
+
+<p><strong>Keystrokes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git&lt;space&gt;status&lt;enter&gt;git&lt;space&gt;add&lt;space&gt;&lt;shift&gt;list&lt;shift&gt;examples.java&lt;enter&gt;git&lt;space&gt;commit&lt;space&gt;-m&lt;space&gt;&lt;shift&gt;'fixed&lt;space&gt;&lt;shift&gt;list&lt;shift&gt;examples.java&lt;shift&gt;'&lt;enter&gt;git&lt;space&gt;push&lt;space&gt;origin&lt;space&gt;main&lt;enter&gt;
+</code></pre></div></div>
+<p>What a mouthfull of keystrokes! It was rather simple commiting and pushing, but including all of the <code class="language-plaintext highlighter-rouge">&lt;shift&gt;</code>s and <code class="language-plaintext highlighter-rouge">enter</code>s and <code class="language-plaintext highlighter-rouge">space</code>s makes the keystroke box cluttered as an alabaman attic! So, I used <code class="language-plaintext highlighter-rouge">git status</code> to make sure that I could <code class="language-plaintext highlighter-rouge">add</code> the changes I made to <code class="language-plaintext highlighter-rouge">ListExamples.java</code>. After that worked, I <code class="language-plaintext highlighter-rouge">add</code>ed the file and <code class="language-plaintext highlighter-rouge">commited</code> that with message <code class="language-plaintext highlighter-rouge">fixed ListExamples.java</code>. Then I <code class="language-plaintext highlighter-rouge">push</code>ed it to the <code class="language-plaintext highlighter-rouge">main</code> branch of my forked repository. Cut and dry, simple and clean, I think this is mission complete!, or concluded!</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/cse15l-lab-reports/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">CSE15L Lab Reports</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">CSE15L Lab Reports</li><li><a class="u-email" href="mailto:miney@ucsd.edu">miney@ucsd.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mineyUCSD"><svg class="svg-icon"><use xlink:href="/cse15l-lab-reports/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mineyUCSD</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Lab Reports for CSE15L Spring Quarter 2023</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
