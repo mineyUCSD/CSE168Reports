@@ -4,9 +4,9 @@ The renderer I'm making for this quarter is called Blurser. It uses OptiX. After
 
 Here are some pictures showing off some complex models I loaded in. One is buggy, but buggy can be beautiful.
 
-![instance](images\hw1\instance.png ?raw=true)
+![instance](images\hw1\instance.png)
 
-![instance2](images\hw1\instance2.png ?raw=true)
+![instance2](images\hw1\instance2.png)
 
-![peak](images\hw1\peak.png ?raw=true)
+![peak](images\hw1\peak.png)
 
