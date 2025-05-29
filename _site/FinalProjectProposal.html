@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Homework 1 | CSE168Reports</title>
+<title>Final Project Proposal | CSE168Reports</title>
 <meta name="generator" content="Jekyll v3.9.3" />
-<meta property="og:title" content="Homework 1" />
+<meta property="og:title" content="Final Project Proposal" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="CSE168 Reports" />
 <meta property="og:description" content="CSE168 Reports" />
-<link rel="canonical" href="http://localhost:4000/CSE168Reports/Homework1.html" />
-<meta property="og:url" content="http://localhost:4000/CSE168Reports/Homework1.html" />
+<link rel="canonical" href="http://localhost:4000/CSE168Reports/FinalProjectProposal.html" />
+<meta property="og:url" content="http://localhost:4000/CSE168Reports/FinalProjectProposal.html" />
 <meta property="og:site_name" content="CSE168Reports" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Homework 1" />
+<meta property="twitter:title" content="Final Project Proposal" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"CSE168 Reports","headline":"Homework 1","url":"http://localhost:4000/CSE168Reports/Homework1.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"CSE168 Reports","headline":"Final Project Proposal","url":"http://localhost:4000/CSE168Reports/FinalProjectProposal.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSE168Reports/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/CSE168Reports/feed.xml" title="CSE168Reports" /></head>
 <body><header class="site-header" role="banner">
@@ -39,21 +39,29 @@
         <article class="post">
 
   <!-- <header class="post-header">
-    <h1 class="post-title">Homework 1</h1>
+    <h1 class="post-title">Final Project Proposal</h1>
   </header> -->
 
   <div class="post-content">
-    <h1 id="homework-1">Homework 1</h1>
+    <h1 id="final-project-proposal">Final Project Proposal</h1>
 
-<p>The renderer I’m making for this quarter is called Blurser. It uses OptiX. After homework1, it can do the recursive blinn-phong shading stuff. I added functionality to move the camera around the world by generating a bunch of frames(didn’t bother figuring out how to limit the frame rate). And I also added some functionality for loading in .obj files that have no textures. The hardest parts of this homework were always very small annoying things, like not offseting shadows correctly, or not defining the bounding box correctly, or not passing attributes correctly. These little issues took more time than I would like for me to work out. And in the end, the tests pass on the site, but they are not 1 to 1 images.</p>
+<p>So these past few weeks have been these past few weeks. I made a poor decision to switch from optix 6.0 to 9.0 and that took forever to figure out. Then I had to refactor everything which took forever. And then I had to try and get multiple importance sampling working, which the auto grader said I didn’t but I think I did probably. But anyways, despite these tribulations I am having a fun time working on this, and it is far more interesting and entertaining than caches and branch predictors. I am thankful.</p>
 
-<p>Here are some pictures showing off some complex models I loaded in. One is buggy, but buggy can be beautiful.</p>
+<p>The first part of my plan is to implement disney brdf. There is a homework assignment from cse272 that explains how to do it. I wanted to implement this so I can get more practice with the sampling ideas, and I want cool materials that are more intuitive to describe. It has 5 different techniques, and I got the evaluate function for all of them working. I still need to set up glass to allow for refraction. I have a couple test photos.</p>
 
-<p><img src="/CSE168Reports/images/hw1/instance.png" alt="instance" /></p>
+<p><img src="/CSE168Reports/images/fpp/soblin.png" alt="soblin" /></p>
 
-<p><img src="/CSE168Reports/images/hw1/instance2.png" alt="instance2" /></p>
+<p><img src="/CSE168Reports/images/fpp/copperbunny.png" alt="copperbunny" /></p>
 
-<p><img src="/CSE168Reports/images/hw1/peak.png" alt="peak" /></p>
+<p><img src="/CSE168Reports/images/fpp/nanimmue.png" alt="nanimmune" /></p>
+
+<p><img src="/CSE168Reports/images/fpp/silvermetal.png" alt="silvermetal" /></p>
+
+<p><img src="/CSE168Reports/images/fpp/perfectpurple.png" alt="perfectpurple" /></p>
+
+<p>You can see that the very smooth metal looks bad right up against the floor due to a lack of brdf importance sampling. The anisotropic stuff makes sampling harder; There is some VNDF sampling routine I still need to understand to get all the sampling set up. Since there are 4 important lobes I want to mis them because I’ll have the pdf for each lobe anyways.</p>
+
+<p>After I finish that up, the plan is to make a bidirectional pathtracer. And after that to get a scene going. I am thinking some steel armor and some glass bottles and some glowing fairies and a little knight. To really show what the renderer can do. But knowing me that won’t get done at all. Disregard the NANs. Sans nans c’est breve et al.</p>
 
 
   </div>
